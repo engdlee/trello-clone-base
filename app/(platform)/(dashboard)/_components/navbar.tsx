@@ -4,10 +4,12 @@ import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
 import { Logo } from "@/components/logo";
 import { Button } from "@/components/ui/button";
 
+import { MobileSidebar } from "./mobile-sidebar";
+
 export const Navbar = () => {
   return (
     <nav className="fixed top-0 z-50 flex items-center w-full px-4 bg-white border-b shadow-sm h-14">
-      {/* TODO: Mobile Sidebar */}
+      <MobileSidebar />
       <div className="flex items-center gap-x-4">
         <div className="hidden md:flex">
           <Logo />
